@@ -1,26 +1,16 @@
 import React from "react";
-import "./hero.css";
+import "./hero.css"; // We will create the CSS styles here
 
-function Hero() {
+const Hero = () => {
   return (
-    <div>
-      <div className="background-video">
-        <video autoPlay loop muted>
-          <source src="./backgroundvideo.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+    <div className="video-container">
+    
+      <div className="content">
+        <h1>Your Content Goes Here</h1>
+        <p>This is an example of content over the video.</p>
       </div>
-      <section id="home" className="hero">
-        <h2>Explore the World with Us</h2>
-        <p>
-          Join us for unforgettable travel experiences to exotic destinations!
-        </p>
-        <a href="#tours" className="btn">
-          View Tours
-        </a>
-      </section>
     </div>
   );
-}
+};
 
 export default Hero;
